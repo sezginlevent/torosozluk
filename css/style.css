@@ -79,5 +79,23 @@ footer a{
   border: 2px solid black;
 }
 
+.resim{
+  margin: 2px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+.uyelikbilgileri{
+  margin: 100px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+.mesajkutusu{
+  margin: 150px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
 
 
