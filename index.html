@@ -40,7 +40,7 @@
             <img src="images/sezgin.jpeg" alt="profilePic" width="32" height="32" class="rounded-circle">
           </a>
           <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="#">Yeni Entry Gir</a></li>
+            <li><a class="dropdown-item" data-toggle="modal" data-target="#entryGirModal" href="#">Yeni Entry Gir</a></li>
             <li><a class="dropdown-item" href="#">Ayarlar</a></li>
             <li><a class="dropdown-item" href="#">Profil</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -76,7 +76,7 @@
                           ...
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Şikayet Et</a>
+                          <a class="dropdown-item" href="#" onclick="sikayetEdildi()">Şikayet Et</a>
                         </div><br>
                     </div>
                     <div align="right"><span><b style="color:grey;">05/06/2022 16:15</b></span></div>
@@ -94,7 +94,7 @@
                           ...
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Şikayet Et</a>
+                          <a class="dropdown-item" href="#" onclick="sikayetEdildi()">Şikayet Et</a>
                         </div><br>
                     </div>
                     <div align="right"><span><b style="color:grey;">05/06/2022 16:45</b></span></div>
@@ -112,7 +112,7 @@
                           ...
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Şikayet Et</a>
+                          <a class="dropdown-item" href="#" onclick="sikayetEdildi()">Şikayet Et</a>
                         </div>
                       <br>
                     </div>
@@ -125,12 +125,12 @@
     </section>
     
 
-    <!--MODAL-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--ENTRY MODAL-->
+    <div class="modal fade" id="entryGirModal" tabindex="-1" role="dialog" aria-labelledby="entryGirModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <h5 class="modal-title" id="entryGirModalLabel">New message</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -149,12 +149,22 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="button" class="btn btn-primary" onclick="entryGirdik()" data-dismiss="modal">Send message</button>
           </div>
         </div>
       </div>
     </div>
-<!--MODAL-->
+<!--ENTRY MODAL-->
+
+<script>
+  function entryGirdik() {
+    alert("Entryniz başarıyla yöneticiye aktarılmıştır, onay sonrası yayınlanacaktır.");
+  }
+
+  function sikayetEdildi() {
+    alert("Yöneticiye Bildirilmiştir!");
+  }
+  </script>
 
  <!-- FOOTER -->
  <footer class="w-100 py-4 flex-shrink-0">
